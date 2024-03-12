@@ -9,6 +9,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  display: none;
 }
 
 .nav-list {
@@ -41,11 +42,24 @@
   margin-bottom: 100px;
 }
 
+/*--------------------------------------------------- PLANETS STYLES */
+.site-main {
+  overflow-x: auto;
+  width: 100%;
+}
+
+
 .planets {
   position: absolute;
   left: 50%;
   right: 50%;
   top: 60%;
+  cursor: pointer;
+  margin-bottom: 100px;
+  white-space: nowrap;
+}
+
+@media screen and (max-width: 700px) {
 }
 
 .sun {
@@ -146,21 +160,24 @@
 .uranus-outline,
 .neptun-outline {
   border-radius: 50%;
-  border: 1px dotted #ddd;
+  /* border: 1px dotted #ddd; */
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  transform: all 0.4s;
 }
 
 .mercury-outline {
   height: 160px;
   width: 160px;
+  border: 1px solid skyblue;
 }
 
 .venus-outline {
   height: 220px;
   width: 220px;
+  border: 1px solid yellow;
 }
 
 .earth-circle {
@@ -176,7 +193,7 @@
 .earth-outline {
   height: 320px;
   width: 320px;
-  /* margin-top: 300px; */
+  border: 1px solid blue;
 }
 
 .earth-inner {
@@ -217,7 +234,7 @@
 .mars-outline {
   height: 410px;
   width: 410px;
-  /* margin-top: 300px; */
+  border: 1px solid orangered;
 }
 
 @keyframes orbit6 {
@@ -246,6 +263,7 @@
 .jupiter-outline {
   height: 470px;
   width: 470px;
+  border: 1px solid orange;
 }
 
 @keyframes orbit7 {
@@ -274,6 +292,7 @@
 .saturn-outline {
   height: 540px;
   width: 540px;
+  border: 1px solid yellow;
 }
 
 @keyframes orbit9 {
@@ -302,6 +321,7 @@
 .uranus-outline {
   height: 600px;
   width: 600px;
+  border: 1px solid skyblue;
 }
 
 @keyframes orbit10 {
@@ -330,6 +350,7 @@
 .neptun-outline {
   height: 660px;
   width: 660px;
+  border: 1px solid blueviolet;
 }
 
 @keyframes orbit11 {
@@ -447,7 +468,7 @@
 
 .info-text {
   margin: 0;
-  font-size: 34px;
+  font-size: 30px;
   color: white;
   font-weight: 700;
   text-transform: uppercase;

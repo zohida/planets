@@ -9,7 +9,6 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  display: none;
 }
 
 .nav-list {
@@ -43,10 +42,10 @@
 }
 
 /*--------------------------------------------------- PLANETS STYLES */
-.site-main {
+/* .site-main {
   overflow-x: auto;
   width: 100%;
-}
+} */
 
 
 .planets {
